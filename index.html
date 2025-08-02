@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Krishnaveni's Coffee Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>The Daily Grind</h1>
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+<section id="hero">
+  <div class="container hero-content">
+    <img
+      src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+      alt="Coffee cup"
+    />
+    
+    <!-- New image added below -->
+
+
+    <div class="hero-text">
+      <h2>Wake Up & Smell The Coffee</h2>
+      <p>The best coffee in town brewed fresh every day.</p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="menu">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="menu-items">
+        <div class="menu-item">
+          <input type="checkbox" id="espresso" data-price="100" />
+          <label for="espresso">
+            <h3>Espresso</h3>
+            <p>Strong and bold espresso shot.</p>
+            <span>₹100</span>
+          </label>
+        </div>
+
+        <div class="menu-item">
+          <input type="checkbox" id="cappuccino" data-price="150" />
+          <label for="cappuccino">
+            <h3>Cappuccino</h3>
+            <p>Creamy cappuccino with steamed milk.</p>
+            <span>₹150</span>
+          </label>
+        </div>
+
+        <div class="menu-item">
+          <input type="checkbox" id="latte" data-price="140" />
+          <label for="latte">
+            <h3>Latte</h3>
+            <p>Smooth latte with rich foam.</p>
+            <span>₹140</span>
+          </label>
+        </div>
+
+        <div class="menu-item">
+          <input type="checkbox" id="mocha" data-price="160" />
+          <label for="mocha">
+            <h3>Mocha</h3>
+            <p>Chocolate-flavored coffee delight.</p>
+            <span>₹160</span>
+          </label>
+        </div>
+      </div>
+
+      <h3>Total Price: ₹<span id="total">0</span></h3>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/xkgzvryg" method="POST">
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+          autocomplete="name"
+        /><br /><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+          autocomplete="email"
+        /><br /><br />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          required
+        ></textarea
+        ><br /><br />
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Krishnaveni's Coffee Shop</p>
+  </footer>
+
+
+</body>
+</html>
